@@ -19,17 +19,23 @@ export let genRouter = {
     path: () => `/home`,
     go: () => switchPath(`/home`),
   },
-  content: {
-    name: "content",
-    raw: "content",
-    path: () => `/content`,
-    go: () => switchPath(`/content`),
+  buttons: {
+    name: "buttons",
+    raw: "buttons",
+    path: () => `/buttons`,
+    go: () => switchPath(`/buttons`),
   },
-  else: {
-    name: "else",
-    raw: "else",
-    path: () => `/else`,
-    go: () => switchPath(`/else`),
+  popup: {
+    name: "popup",
+    raw: "popup",
+    path: () => `/popup`,
+    go: () => switchPath(`/popup`),
+  },
+  relativeTime: {
+    name: "relative-time",
+    raw: "relative-time",
+    path: () => `/relative-time`,
+    go: () => switchPath(`/relative-time`),
   },
   _: {
     name: "home",
