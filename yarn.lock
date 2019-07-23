@@ -91,10 +91,10 @@
   resolved "https://registry.yarnpkg.com/@jimengio/ci-progress-webpack-plugin/-/ci-progress-webpack-plugin-0.1.1.tgz#3029a2be1df8f0432fc85a8afa926adc004c4f0a"
   integrity sha512-uVf9yrZHFzT6FC+ZKeuv2GjqKoBaB+ceKZDIqqGH9cL/8iWmvXKKB6LXkCOVVEr9nsJaHOEKQfNGUSELgUzXPw==
 
-"@jimengio/doc-frame@^0.1.0-a3":
-  version "0.1.0-a3"
-  resolved "https://registry.yarnpkg.com/@jimengio/doc-frame/-/doc-frame-0.1.0-a3.tgz#8424a5fa21f5f91f5c7506bf1305ca7a33e5e3ec"
-  integrity sha512-EDwd0nLVHuWux9qTC6p1i5GnlnnCn44o/GRPcs7hAqxuGA3OKU0EUAWhjzG0Ie9BaD04bh0cY8DMX+KvAZE5Iw==
+"@jimengio/doc-frame@^0.1.0-a5":
+  version "0.1.0-a5"
+  resolved "https://registry.yarnpkg.com/@jimengio/doc-frame/-/doc-frame-0.1.0-a5.tgz#f0550a719f4236713f2fddf11681b55b90d10222"
+  integrity sha512-4iswlhnii2os0xG0tJdo6gyW6N0OPbc4wMF7SsLdWpGVbb7GIxPXMLhu3KhWhTfTtSPGTeh18rwL65Fs47CRDA==
 
 "@jimengio/router-code-generator@^0.1.5":
   version "0.1.5"
