@@ -3,7 +3,7 @@ import { css, cx } from "emotion";
 
 import { Theme } from "./types";
 
-export enum MessageKind {
+export enum EMessageKind {
   Success = "success",
   Failure = "failure",
   Normal = "normal",
@@ -11,15 +11,15 @@ export enum MessageKind {
 
 interface IProps {
   message: string;
-  kind: MessageKind;
+  kind: EMessageKind;
 }
 
 export default class MessageBanner extends React.Component<IProps, any> {
   render() {
     let themeColor = Theme.Dark;
-    if (this.props.kind === MessageKind.Success) {
+    if (this.props.kind === EMessageKind.Success) {
       themeColor = Theme.Green;
-    } else if (this.props.kind === MessageKind.Failure) {
+    } else if (this.props.kind === EMessageKind.Failure) {
       themeColor = Theme.Red;
     }
 

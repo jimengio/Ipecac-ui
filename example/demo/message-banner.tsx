@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import { MessageBanner } from "../../src";
-import { MessageKind } from "../../src/message-banner";
+import { EMessageKind } from "../../src/message-banner";
 
 let DemoMessageBanner: FC<{}> = (props) => {
   /** Methods */
@@ -9,9 +9,9 @@ let DemoMessageBanner: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <MessageBanner message={"SUCCESS"} kind={MessageKind.Success} />
-      <MessageBanner message={"Failure"} kind={MessageKind.Failure} />
-      <MessageBanner message={"Normal"} kind={MessageKind.Normal} />
+      <MessageBanner message={"SUCCESS"} kind={EMessageKind.Success} />
+      <MessageBanner message={"Failure"} kind={EMessageKind.Failure} />
+      <MessageBanner message={"Normal"} kind={EMessageKind.Normal} />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { cx, css } from "emotion";
 import { Theme } from "./types";
 import { triggeredByScanner } from "./util/dom";
 
-export enum ButtonSize {
+export enum EButtonSize {
   Small = "small",
   Normal = "normal",
   Larger = "larger",
@@ -51,9 +51,9 @@ export default class Button extends React.Component<IButtonProps, any> {
           this.props.round === true ? styleRound : null,
           this.props.inverse ? styleInverse : null,
           this.props.square ? styleSquare : null,
-          this.props.size === ButtonSize.Small ? styleSmall : null,
-          this.props.size === ButtonSize.Larger ? styleLarger : null,
-          this.props.size === ButtonSize.Large ? styleLarge : null,
+          this.props.size === EButtonSize.Small ? styleSmall : null,
+          this.props.size === EButtonSize.Larger ? styleLarger : null,
+          this.props.size === EButtonSize.Large ? styleLarge : null,
           this.props.disabled ? styleDisabled : null,
           this.props.withOutRadius ? styleWithouRadius : null,
           this.props.justNeedLeftRadius ? styleLeftRadius : null,

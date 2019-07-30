@@ -1,4 +1,4 @@
-export { default as Button } from "./button";
+export { default as Button, EButtonSize as ButtonSize } from "./button";
 export { default as Calendar } from "./calendar";
 export { default as CheckResult } from "./check-result";
 export { default as Checkbox } from "./checkbox";
@@ -7,12 +7,13 @@ export { default as DigitsPicker } from "./digits-picker";
 export { default as DurationCompact } from "./duration-compact";
 export { default as EmptyPlaceholder } from "./empty-placeholder";
 export { default as EventTip } from "./event-tip";
-export { default as FormLayout } from "./form-layout";
+export { default as FormLayout, IFormLayoutItem } from "./form-layout";
 export { default as FormTableLayout } from "./form-table-layout";
 // icon
-export { default as InformationRows } from "./information-rows";
+export { default as InformationRows, IInformationItem } from "./information-rows";
 export { default as InputNumberPad } from "./input-number-pad";
-export { default as MessageBanner } from "./message-banner";
+export { NumberPadPopupLayout } from "./number-pad";
+export { default as MessageBanner, EMessageKind } from "./message-banner";
 // message tips
 export { default as Pagination } from "./pagination";
 export { default as PopupArea } from "./popup-area";
