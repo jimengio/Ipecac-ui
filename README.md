@@ -6,11 +6,13 @@ http://fe.jimu.io/ipeca-ui/
 
 ### Usage
 
-TODO
+![](https://img.shields.io/npm/v/@jimengio/ipeca-ui.svg?style=flat-square)
 
 ```bash
 yarn add @jimengio/ipeca-ui
 ```
+
+> TODO, find more https://github.com/jimengio/ipeca-ui/tree/master/example/demo .
 
 ### Workflow
 

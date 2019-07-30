@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import Button from "../../../src/buttons";
+import Button from "../../src/button";
 
 let DemoButtons: FC<{}> = (props) => {
   /** Methods */

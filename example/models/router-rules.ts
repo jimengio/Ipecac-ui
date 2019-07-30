@@ -1,3 +1,31 @@
 import { IRouteRule } from "@jimengio/ruled-router";
 
-export const routerRules: IRouteRule[] = [{ path: "home" }, { path: "buttons" }, { path: "popup" }, { path: "relative-time" }, { path: "", name: "home" }];
+export const routerRules: IRouteRule[] = [
+  {
+    path: "home",
+  },
+  { path: "buttons" },
+  { path: "popup" },
+  { path: "progress" },
+  { path: "property-list" },
+  { path: "rough-table" },
+  { path: "tag" },
+  { path: "calendar" },
+  { path: "dialog" },
+  { path: "duration-time" },
+  { path: "number-pad" },
+  { path: "information-rows" },
+  { path: "form-layout" },
+  { path: "form-table-layout" },
+  { path: "tabs" },
+  { path: "checkbox" },
+  { path: "check-result" },
+  { path: "digits-picker" },
+  { path: "empty-placeholder" },
+  { path: "event-tip" },
+  { path: "message-banner" },
+  { path: "pagination" },
+  { path: "relative-time" },
+  { path: "shorten-code" },
+  { path: "", name: "home" },
+];

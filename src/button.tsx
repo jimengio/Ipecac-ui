@@ -78,12 +78,12 @@ var styleButton = css`
   white-space: nowrap;
   line-height: 48px;
   height: 50px;
-  border: 1px solid ${Theme.Divider};
-  font-weight: 300;
+  border: 2px solid ${Theme.Divider};
+  font-weight: 500;
   font-size: 20px;
   min-width: 160px;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 0 20px;
   color: ${Theme.Dark};
   border-color: ${Theme.Dark};
@@ -139,11 +139,11 @@ const styleWithouRadius = css`
 /**tab的颜色 */
 const styleTabChange = css`
   color: ${Theme.GreyDark};
-  border: 1px solid ${Theme.GreyDark};
+  border: 2px solid ${Theme.GreyDark};
 `;
 
 const styleInverseTabChange = css`
   background: ${Theme.GreyDark};
   color: white;
-  border: 1px solid ${Theme.GreyDark};
+  border: 2px solid ${Theme.GreyDark};
 `;

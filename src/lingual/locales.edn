@@ -1,0 +1,34 @@
+{
+ :sessions {}
+ :users {}
+ :locales {
+  "cancel" {"zhCN" "取消", "enUS" "Cancel"}
+  "clear" {"zhCN" "清除", "enUS" "Clear"}
+  "confirm" {"zhCN" "确认", "enUS" "Confirm"}
+  "delete" {"zhCN" "删除", "enUS" "Delete"}
+  "enter" {"zhCN" "回车", "enUS" "Enter"}
+  "finish" {"zhCN" "完成", "enUS" "Finish"}
+  "friday" {"zhCN" "五", "enUS" "Fri"}
+  "labelIsRequired" {"zhCN" "{label} 必填", "enUS" "{label} is required"}
+  "labelShouldBeBoolean" {"zhCN" "{label} 应该为布尔值", "enUS" "{label} should be a boolean"}
+  "labelShouldBeNumber" {"zhCN" "{label} 应该为数字", "enUS" "{label} should be a number"}
+  "labelShouldBeString" {"zhCN" "{label} 应该为字符串", "enUS" "{label} should be a string"}
+  "monday" {"zhCN" "一", "enUS" "Mon"}
+  "noData" {"zhCN" "没有数据", "enUS" "No Data"}
+  "pleaseInput" {"zhCN" "请输入", "enUS" "Please input"}
+  "pleaseInputLabel" {"zhCN" "请输入{label}", "enUS" "Please input {label}"}
+  "pleaseSelectLabel" {"zhCN" "请选择{label}", "enUS" "Please select {label}"}
+  "sateday" {"zhCN" "六", "enUS" "Sat"}
+  "submit" {"zhCN" "提交", "enUS" "Submit"}
+  "sunday" {"zhCN" "日", "enUS" "Sun"}
+  "symbolEmpty" {"zhCN" "-", "enUS" "-"}
+  "thursday" {"zhCN" "四", "enUS" "Thu"}
+  "tuesday" {"zhCN" "二", "enUS" "Tue"}
+  "wednesday" {"zhCN" "三", "enUS" "Wed"}
+  "xDaysYHoursZMinutes" {"zhCN" "{x}天{y}小时{z}分钟", "enUS" "{x} days {y} hours {z} mins"}
+  "xHoursYMinutes" {"zhCN" "{x}小时{y}分钟", "enUS" "{x} hours {y} mins"}
+  "xMinutes" {"zhCN" "{x}分钟", "enUS" "{x} mins"}
+ }
+ :schema {:version "0.2.x"}
+ :settings {:app-id "050bf2725352f125", :app-secret "w7qw7ME8c8wGQJBk8EOM5MuFybgoEA9F"}
+}
