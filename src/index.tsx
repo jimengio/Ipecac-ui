@@ -21,5 +21,5 @@ export { default as PopupConfirm } from "./popup-confirm";
 export { default as Progress } from "./progress";
 export { default as RelativeTime } from "./relative-time";
 export { default as ShortenCode } from "./shorten-code";
-export { default as Tabs } from "./tabs";
+export { default as Tabs, ITab } from "./tabs";
 export { default as Tag } from "./tag";
