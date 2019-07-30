@@ -1,4 +1,4 @@
-export { default as Button, EButtonSize as ButtonSize } from "./button";
+export { default as Button, EButtonSize } from "./button";
 export { default as Calendar } from "./calendar";
 export { default as CheckResult } from "./check-result";
 export { default as Checkbox } from "./checkbox";
