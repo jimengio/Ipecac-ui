@@ -1,7 +1,7 @@
 import React from "react";
 import { css, cx } from "emotion";
 
-import Button, { ButtonSize } from "./button";
+import Button, { EButtonSize } from "./button";
 
 import * as layout from "@jimengio/shared-utils";
 
@@ -11,7 +11,7 @@ export interface ITab {
 }
 
 interface IProps {
-  size?: ButtonSize;
+  size?: EButtonSize;
   tabWidth?: number;
   tabs: ITab[];
   selected: any;
