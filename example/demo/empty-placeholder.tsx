@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { EmptyPlaceholder } from "../../src";
+import EmptyPlaceholder from "../../src/empty-placeholder";
 
 let DemoEmptyPlaceholder: FC<{}> = (props) => {
   /** Methods */

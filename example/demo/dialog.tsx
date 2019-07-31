@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { css } from "emotion";
-import { Dialog } from "../../src";
+import Dialog from "../../src/dialog";
 
 let DemoDialog: FC<{}> = (props) => {
   let [visible, setVisible] = useState(false);

@@ -5,7 +5,7 @@ import * as layout from "@jimengio/shared-utils";
 import { Theme } from "./types";
 
 import FaIcon from "@jimengio/fa-icons";
-import { IconName } from "@jimengio/fa-icons";
+import { EFaIcon } from "@jimengio/fa-icons";
 
 import Button from "./button";
 import Space from "./space";
@@ -25,10 +25,10 @@ export default class Dialog extends React.Component<IProps, any> {
         <div className={styleDialog} onClick={this.handleStop}>
           <div className={cx(layout.rowCenter, styleHeader)}>
             <span className={styleTitle}>{this.props.title}</span>
-            <FaIcon name={IconName.Close} onClick={this.handleClose} className={styleIcon} />
+            <FaIcon name={EFaIcon.Close} onClick={this.handleClose} className={styleIcon} />
           </div>
           <div className={cx(layout.rowCenter, layout.flex, styleBody)}>
-            <FaIcon name={IconName.Warning} className={styleWarn} />
+            <FaIcon name={EFaIcon.Warning} className={styleWarn} />
             <Space width={20} />
             <div className={styleMessage}>{this.props.content}</div>
           </div>

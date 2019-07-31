@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import { css, cx } from "emotion";
 import { center, rowCenter } from "@jimengio/shared-utils";
-import FaIcon, { IconName } from "@jimengio/fa-icons";
+import FaIcon, { EFaIcon } from "@jimengio/fa-icons";
 import Space from "./space";
 
 export enum EMessageTipType {
@@ -24,13 +24,13 @@ let globalContainer = document.querySelector(".message-tips");
 let getTipIcon = (type: EMessageTipType) => {
   switch (type) {
     case EMessageTipType.Failure:
-      return <FaIcon name={IconName.TimesCircle} className={styleIcon} />;
+      return <FaIcon name={EFaIcon.TimesCircle} className={styleIcon} />;
     case EMessageTipType.Info:
-      return <FaIcon name={IconName.ExclamationCircle} className={styleIcon} />;
+      return <FaIcon name={EFaIcon.ExclamationCircle} className={styleIcon} />;
     case EMessageTipType.Success:
-      return <FaIcon name={IconName.CheckCircle} className={styleIcon} />;
+      return <FaIcon name={EFaIcon.CheckCircle} className={styleIcon} />;
     default:
-      return <FaIcon name={IconName.CircleThin} className={styleIcon} />;
+      return <FaIcon name={EFaIcon.CircleThin} className={styleIcon} />;
   }
 };
 

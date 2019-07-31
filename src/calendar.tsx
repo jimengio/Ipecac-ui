@@ -7,7 +7,7 @@ import { Theme } from "./types";
 import { flex, rowCenter, column, rowParted } from "@jimengio/shared-utils";
 
 import FaIcon from "@jimengio/fa-icons";
-import { IconName } from "@jimengio/fa-icons";
+import { EFaIcon } from "@jimengio/fa-icons";
 import { lingual } from "./lingual";
 
 interface IProps {
@@ -41,11 +41,11 @@ export default class Calendar extends React.Component<IProps, any> {
     return (
       <div className={cx(column, styleCalendar)}>
         <div className={cx(rowCenter, styleHeader)}>
-          <FaIcon name={IconName.AngleDoubleLeft} onClick={this.onPrevYear.bind(this)} />
-          <FaIcon name={IconName.AngleLeft} onClick={this.onPrevMonth.bind(this)} />
+          <FaIcon name={EFaIcon.AngleDoubleLeft} onClick={this.onPrevYear.bind(this)} />
+          <FaIcon name={EFaIcon.AngleLeft} onClick={this.onPrevMonth.bind(this)} />
           <span className={styleYearMonth}>{date.toFormat("yyyy-MM")}</span>
-          <FaIcon name={IconName.AngleRight} onClick={this.onNextMonth.bind(this)} />
-          <FaIcon name={IconName.AngleDoubleRight} onClick={this.onNextYear.bind(this)} />
+          <FaIcon name={EFaIcon.AngleRight} onClick={this.onNextMonth.bind(this)} />
+          <FaIcon name={EFaIcon.AngleDoubleRight} onClick={this.onNextYear.bind(this)} />
         </div>
         <div className={cx(flex, styleGrids)}>
           <span className={cx(styleCell, styleGuide)}>{lingual.monday}</span>

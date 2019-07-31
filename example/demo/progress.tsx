@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { Progress } from "../../src";
+import Progress from "../../src/progress";
 
 let DemoProgress: FC<{}> = (props) => {
   /** Methods */

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { CheckResult } from "../../src";
+import CheckResult from "../../src/check-result";
 
 let DemoCheckResult: FC<{}> = (props) => {
   /** Methods */

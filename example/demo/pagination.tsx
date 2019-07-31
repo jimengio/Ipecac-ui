@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { Pagination } from "../../src";
+import Pagination from "../../src/pagination";
 
 let DemoPagination: FC<{}> = (props) => {
   /** Methods */

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { ShortenCode } from "../../src";
+import ShortenCode from "../../src/shorten-code";
 
 let DemoShortenCode: FC<{}> = (props) => {
   /** Methods */

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { Tag } from "../../src";
+import Tag from "../../src/tag";
 
 let DemoTag: FC<{}> = (props) => {
   /** Methods */

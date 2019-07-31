@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { MessageBanner } from "../../src";
+import MessageBanner from "../../src/message-banner";
 import { EMessageKind } from "../../src/message-banner";
 
 let DemoMessageBanner: FC<{}> = (props) => {

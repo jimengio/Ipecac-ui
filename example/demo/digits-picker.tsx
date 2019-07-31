@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { DigitsPicker } from "../../src";
+import DigitsPicker from "../../src/digits-picker";
 
 let DemoDigitsPicker: FC<{}> = (props) => {
   /** Methods */

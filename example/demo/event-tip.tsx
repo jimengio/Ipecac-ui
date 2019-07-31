@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { css } from "emotion";
-import { EventTip } from "../../src";
+import EventTip from "../../src/event-tip";
 
 let DemoEventTip: FC<{}> = (props) => {
   /** Methods */

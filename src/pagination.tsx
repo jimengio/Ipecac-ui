@@ -5,7 +5,7 @@ import { css, cx } from "emotion";
 import FaIcon from "@jimengio/fa-icons";
 import { Theme } from "./types";
 
-import { IconName } from "@jimengio/fa-icons";
+import { EFaIcon } from "@jimengio/fa-icons";
 import * as layout from "@jimengio/shared-utils";
 
 interface IProps {
@@ -99,7 +99,7 @@ export default class Pagination extends React.Component<IProps, any> {
   renderLeft() {
     return (
       <div className={cx(styleIcon, this.props.current === 0 ? styleDisabled : null)} onClick={this.onShowPrevious.bind(this)}>
-        <FaIcon name={IconName.AngleLeft} />
+        <FaIcon name={EFaIcon.AngleLeft} />
       </div>
     );
   }
@@ -107,7 +107,7 @@ export default class Pagination extends React.Component<IProps, any> {
   renderRight(count) {
     return (
       <div className={cx(styleIcon, this.props.current === count - 1 ? styleDisabled : null)} onClick={this.onShowNext.bind(this)}>
-        <FaIcon name={IconName.AngleRight} />
+        <FaIcon name={EFaIcon.AngleRight} />
       </div>
     );
   }
@@ -115,7 +115,7 @@ export default class Pagination extends React.Component<IProps, any> {
   renderEllipsis(n) {
     return (
       <div className={cx(styleIcon)} onClick={() => this.props.onChange(n)}>
-        <FaIcon name={IconName.EllipsisH} />
+        <FaIcon name={EFaIcon.EllipsisH} />
       </div>
     );
   }
