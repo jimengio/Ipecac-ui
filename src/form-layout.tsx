@@ -86,12 +86,13 @@ export let FormLayoutInput: FC<{
   /** 默认 50px; 增高的版本 60px */
   larger?: boolean;
   placeholder?: string;
+  className?: string;
 }> = (props) => {
   /** Methods */
   /** Effects */
   /** Renderers */
   return (
-    <div className={cx(styleInput, props.larger ? styleInputLarger : null)} onClick={props.onClick}>
+    <div className={cx(styleInput, props.larger ? styleInputLarger : null, props.className)} onClick={props.onClick}>
       {props.value || <div className={stylePlaceholder}>{props.placeholder}</div>}
     </div>
   );

@@ -7,7 +7,7 @@ export { default as DigitsPicker } from "./digits-picker";
 export { default as DurationCompact } from "./duration-compact";
 export { default as EmptyPlaceholder } from "./empty-placeholder";
 export { default as EventTip } from "./event-tip";
-export { default as FormLayout, IFormLayoutItem } from "./form-layout";
+export { default as FormLayout, FormLayoutInput, IFormLayoutItem } from "./form-layout";
 export { default as FormTableLayout } from "./form-table-layout";
 // icon
 export { default as InformationRows, IInformationItem } from "./information-rows";
