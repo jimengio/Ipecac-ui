@@ -82,6 +82,7 @@ export default FormLayout;
 
 export let FormLayoutInput: FC<{
   value: string;
+  className?: string;
   onClick?: () => void;
   /** 默认 50px; 增高的版本 60px */
   larger?: boolean;
@@ -91,7 +92,7 @@ export let FormLayoutInput: FC<{
   /** Effects */
   /** Renderers */
   return (
-    <div className={cx(styleInput, props.larger ? styleInputLarger : null)} onClick={props.onClick}>
+    <div className={cx(styleInput, props.className, props.larger ? styleInputLarger : null)} onClick={props.onClick}>
       {props.value || <div className={stylePlaceholder}>{props.placeholder}</div>}
     </div>
   );
