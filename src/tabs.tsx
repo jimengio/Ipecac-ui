@@ -3,7 +3,7 @@ import { css, cx } from "emotion";
 
 import Button, { EButtonSize } from "./button";
 
-import * as layout from "@jimengio/shared-utils";
+import * as layout from "@jimengio/flex-styles";
 
 export interface ITab {
   value: string;

@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import RoughTable from "../../src/rough-table";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoRoughTable: FC<{}> = (props) => {
   /** Methods */
@@ -8,13 +9,15 @@ let DemoRoughTable: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <RoughTable
-        dataSource={[{}, {}]}
-        labels={["a", "b"]}
-        renderColumns={(record) => {
-          return ["a", "b"];
-        }}
-      />
+      <DocDemo title="Table">
+        <RoughTable
+          dataSource={[{}, {}]}
+          labels={["a", "b"]}
+          renderColumns={(record) => {
+            return ["a", "b"];
+          }}
+        />
+      </DocDemo>
     </div>
   );
 };

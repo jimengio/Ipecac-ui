@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import DigitsPicker from "../../src/digits-picker";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoDigitsPicker: FC<{}> = (props) => {
   /** Methods */
@@ -8,13 +9,15 @@ let DemoDigitsPicker: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <DigitsPicker
-        x={3}
-        n={4}
-        onSelect={(x) => {
-          console.log(x);
-        }}
-      />
+      <DocDemo title="Picker">
+        <DigitsPicker
+          x={3}
+          n={4}
+          onSelect={(x) => {
+            console.log(x);
+          }}
+        />
+      </DocDemo>
     </div>
   );
 };

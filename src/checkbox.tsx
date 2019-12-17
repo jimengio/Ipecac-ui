@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { css, cx } from "emotion";
 import JimoIcon, { EJimoIcon } from "@jimengio/jimo-icons";
-import { center } from "@jimengio/shared-utils";
+import { center } from "@jimengio/flex-styles";
 
 let Checkbox: FC<{
   checked: boolean;

@@ -3,6 +3,7 @@ import { css } from "emotion";
 import FormTableLayout from "../../src/form-table-layout";
 import { FormLayoutInput, FormButtons } from "../../src/form-layout";
 import Space from "../../src/space";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let data = [{}, {}, {}];
 
@@ -12,17 +13,19 @@ let DemoFormTableLayout: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <FormTableLayout
-        titles={["A", "B", "C"]}
-        data={data}
-        renderColumn={(item) => {
-          return ["A", "B", <FormLayoutInput value={"demo"} />];
-        }}
-      />
+      <DocDemo title="Form table">
+        <FormTableLayout
+          titles={["A", "B", "C"]}
+          data={data}
+          renderColumn={(item) => {
+            return ["A", "B", <FormLayoutInput value={"demo"} />];
+          }}
+        />
+      </DocDemo>
 
-      <Space height={40} />
-
-      <FormButtons onCancel={null} onConfirm={null} />
+      <DocDemo title="Buttons">
+        <FormButtons onCancel={null} onConfirm={null} />
+      </DocDemo>
     </div>
   );
 };

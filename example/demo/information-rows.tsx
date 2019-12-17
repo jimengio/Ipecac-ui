@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import InformationRows, { IInformationItem, EInformationItemType } from "../../src/information-rows";
-import { center } from "@jimengio/shared-utils";
+import { center } from "@jimengio/flex-styles";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoInformationRows: FC<{}> = (props) => {
   let items: IInformationItem[] = [
@@ -24,9 +25,11 @@ let DemoInformationRows: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <div className={styleArea}>
-        <InformationRows title="DEMO" items={items} />
-      </div>
+      <DocDemo title="Informations">
+        <div className={styleArea}>
+          <InformationRows title="DEMO" items={items} />
+        </div>
+      </DocDemo>
     </div>
   );
 };

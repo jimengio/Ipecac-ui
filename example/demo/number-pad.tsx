@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { css, cx } from "emotion";
-import { center, fullscreen } from "@jimengio/shared-utils";
+import { center, fullscreen } from "@jimengio/flex-styles";
 import NumberPad from "../../src/number-pad";
 import InputNumberPad from "../../src/input-number-pad";
 

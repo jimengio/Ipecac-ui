@@ -1,6 +1,6 @@
 import React, { FC, CSSProperties } from "react";
 import { css, cx } from "emotion";
-import { center, row, column } from "@jimengio/shared-utils";
+import { center, row, column } from "@jimengio/flex-styles";
 import { lingual } from "./lingual";
 
 let NumberPad: FC<{

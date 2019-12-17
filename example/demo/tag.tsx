@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import Tag from "../../src/tag";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoTag: FC<{}> = (props) => {
   /** Methods */
@@ -8,10 +9,12 @@ let DemoTag: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <Tag status={"processing"}>DEMO</Tag>
-      <Tag status={"waiting"}>DEMO</Tag>
-      <Tag status={"success"}>DEMO</Tag>
-      <Tag status={"error"}>DEMO</Tag>
+      <DocDemo title="Tags">
+        <Tag status={"processing"}>DEMO</Tag>
+        <Tag status={"waiting"}>DEMO</Tag>
+        <Tag status={"success"}>DEMO</Tag>
+        <Tag status={"error"}>DEMO</Tag>
+      </DocDemo>
     </div>
   );
 };

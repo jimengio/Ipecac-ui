@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import React, { FC } from "react";
 import { css } from "emotion";
 import RelativeTime from "../../src/relative-time";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoRelativeTime: FC<{}> = (props) => {
   /** Methods */
@@ -9,11 +10,13 @@ let DemoRelativeTime: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <RelativeTime
-        startedTime={dayjs()
-          .startOf("day")
-          .toDate()}
-      />
+      <DocDemo title="Time">
+        <RelativeTime
+          startedTime={dayjs()
+            .startOf("day")
+            .toDate()}
+        />
+      </DocDemo>
     </div>
   );
 };

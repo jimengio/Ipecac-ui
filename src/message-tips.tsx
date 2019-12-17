@@ -2,7 +2,7 @@ import React, { SFC } from "react";
 import ReactDOM from "react-dom";
 
 import { css, cx } from "emotion";
-import { center, rowCenter } from "@jimengio/shared-utils";
+import { center, rowCenter } from "@jimengio/flex-styles";
 import FaIcon, { EFaIcon } from "@jimengio/fa-icons";
 import Space from "./space";
 

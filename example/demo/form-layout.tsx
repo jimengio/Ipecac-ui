@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import { css, cx } from "emotion";
 import FormLayout, { ButtonsAtBottom, IFormLayoutItem, FormLayoutInput, FormLayoutVertical } from "../../src/form-layout";
-import { fullscreen, column, flex } from "@jimengio/shared-utils";
+import { fullscreen, column, flex } from "@jimengio/flex-styles";
 import Space from "../../src/space";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoFormLayout: FC<{}> = (props) => {
   let items: IFormLayoutItem[] = [
@@ -37,12 +38,17 @@ let DemoFormLayout: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={cx(column, styleContainer)}>
-      <div className={flex}>
+      <DocDemo title="Layout">
         <FormLayout title={"TITLE"} items={items} />
-        <Space height={40} />
+      </DocDemo>
+
+      <DocDemo title="Vertical layout">
         <FormLayoutVertical items={items} />
-      </div>
-      <ButtonsAtBottom onConfirm={() => {}} onCancel={() => {}} />
+      </DocDemo>
+
+      <DocDemo title="Buttons">
+        <ButtonsAtBottom onConfirm={() => {}} onCancel={() => {}} />
+      </DocDemo>
     </div>
   );
 };
