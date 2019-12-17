@@ -140,6 +140,7 @@ let Container: FC<{
     <div className={cx(row, fullscreen, styleContainer)}>
       <DocSidebar
         currentPath={props.router.name}
+        title="IPeCa UI"
         onSwitch={(item) => {
           switchPage(item.path);
         }}
