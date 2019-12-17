@@ -1,7 +1,6 @@
 import React from "react";
 import range from "lodash/range";
 import { css, cx } from "emotion";
-import { flex } from "@jimengio/shared-utils";
 import { Theme } from "./types";
 
 interface IProps {

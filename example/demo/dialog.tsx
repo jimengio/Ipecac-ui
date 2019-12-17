@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import { css } from "emotion";
 import Dialog from "../../src/dialog";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoDialog: FC<{}> = (props) => {
   let [visible, setVisible] = useState(false);
@@ -10,7 +11,9 @@ let DemoDialog: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <a onClick={() => setVisible(true)}>Open</a>
+      <DocDemo title="Dialog">
+        <a onClick={() => setVisible(true)}>Open</a>
+      </DocDemo>
       {visible ? <Dialog title={"TITLE"} content={"CONTENT"} onClose={() => setVisible(false)} /> : null}
     </div>
   );

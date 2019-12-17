@@ -1,4 +1,4 @@
-import { expand, row, column, rowParted, fullHeight, center } from "@jimengio/shared-utils";
+import { expand, row, column, rowParted, fullHeight, center } from "@jimengio/flex-styles";
 import React, { FC } from "react";
 import { css, cx } from "emotion";
 import JimoIcon, { EJimoIcon } from "@jimengio/jimo-icons";

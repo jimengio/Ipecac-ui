@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { cx, css } from "emotion";
-import { rowParted, flex, column } from "@jimengio/shared-utils";
+import { rowParted, flex, column } from "@jimengio/flex-styles";
 import Space from "./space";
 
 export let InformationRow: FC<{ label: ReactNode; value: ReactNode; noUnderline?: boolean; valueClassName?: string }> = (props) => {

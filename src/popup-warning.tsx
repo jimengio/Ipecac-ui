@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { css, cx } from "emotion";
 import PopupArea from "./popup-area";
 import JimoIcon, { EJimoIcon } from "@jimengio/jimo-icons";
-import { center } from "@jimengio/shared-utils";
+import { center } from "@jimengio/flex-styles";
 import Space from "./space";
 import Button from "./button";
 import { FuncVoid } from "./types";

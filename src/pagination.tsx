@@ -6,7 +6,7 @@ import FaIcon from "@jimengio/fa-icons";
 import { Theme } from "./types";
 
 import { EFaIcon } from "@jimengio/fa-icons";
-import * as layout from "@jimengio/shared-utils";
+import * as layout from "@jimengio/flex-styles";
 
 interface IProps {
   total: number;

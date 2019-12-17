@@ -6,7 +6,7 @@ import { findRouteTarget } from "@jimengio/ruled-router/lib/dom";
 import Home from "./home";
 import { genRouter } from "controller/generated-router";
 import { DocSidebar, ISidebarEntry } from "@jimengio/doc-frame";
-import { row, fullscreen, expand } from "@jimengio/shared-utils";
+import { row, fullscreen, expand } from "@jimengio/flex-styles";
 import DemoButton from "../demo/button";
 import DemoPopupArea from "../demo/popup-area";
 import DemoDurationCompact from "../demo/duration-compact";

@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import { css } from "emotion";
 import Tabs, { ITab } from "../../src/tabs";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let tabs: ITab[] = [
   {
@@ -20,13 +21,15 @@ let DemoTabs: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <Tabs
-        tabs={tabs}
-        onSelect={(k) => {
-          setSelected(k);
-        }}
-        selected={selected}
-      />
+      <DocDemo title="Tabs">
+        <Tabs
+          tabs={tabs}
+          onSelect={(k) => {
+            setSelected(k);
+          }}
+          selected={selected}
+        />
+      </DocDemo>
     </div>
   );
 };

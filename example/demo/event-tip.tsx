@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import EventTip from "../../src/event-tip";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoEventTip: FC<{}> = (props) => {
   /** Methods */
@@ -8,7 +9,9 @@ let DemoEventTip: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <EventTip kind={"scan"} />
+      <DocDemo title="Tip">
+        <EventTip kind={"scan"} />
+      </DocDemo>
     </div>
   );
 };

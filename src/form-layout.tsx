@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { css, cx } from "emotion";
-import { row, flex, center, rowCenter, rowParted, column, rowMiddle } from "@jimengio/shared-utils";
+import { row, flex, center, rowCenter, rowParted, column, rowMiddle } from "@jimengio/flex-styles";
 import Space from "./space";
 import { FuncVoid } from "./types";
 import Button from "./button";

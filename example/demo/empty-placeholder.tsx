@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { css } from "emotion";
 import EmptyPlaceholder from "../../src/empty-placeholder";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoEmptyPlaceholder: FC<{}> = (props) => {
   /** Methods */
@@ -8,7 +9,9 @@ let DemoEmptyPlaceholder: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <EmptyPlaceholder />
+      <DocDemo title="Placeholder">
+        <EmptyPlaceholder />
+      </DocDemo>
     </div>
   );
 };

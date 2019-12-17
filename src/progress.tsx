@@ -1,7 +1,7 @@
 import React from "react";
 import { css, cx } from "emotion";
 
-import * as layout from "@jimengio/shared-utils";
+import * as layout from "@jimengio/flex-styles";
 import { Theme } from "./types";
 
 interface IProps {

@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import { css } from "emotion";
 import Checkbox from "../../src/checkbox";
+import { DocDemo } from "@jimengio/doc-frame";
 
 let DemoCheckbox: FC<{}> = (props) => {
   let [checked, setChecked] = useState(false);
@@ -9,15 +10,17 @@ let DemoCheckbox: FC<{}> = (props) => {
   /** Renderers */
   return (
     <div className={styleContainer}>
-      <div className={styleBlock}>
-        <Checkbox checked={true} onChange={null} />
-      </div>
-      <div className={styleBlock}>
-        <Checkbox checked={false} onChange={null} />
-      </div>
-      <div className={styleBlock}>
-        <Checkbox checked={checked} onChange={setChecked} />
-      </div>
+      <DocDemo title="Checkbox">
+        <div className={styleBlock}>
+          <Checkbox checked={true} onChange={null} />
+        </div>
+        <div className={styleBlock}>
+          <Checkbox checked={false} onChange={null} />
+        </div>
+        <div className={styleBlock}>
+          <Checkbox checked={checked} onChange={setChecked} />
+        </div>
+      </DocDemo>
     </div>
   );
 };

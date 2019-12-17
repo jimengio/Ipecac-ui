@@ -4,7 +4,7 @@ import { css, cx } from "emotion";
 import { DateTime } from "luxon";
 
 import { Theme } from "./types";
-import { flex, rowCenter, column, rowParted } from "@jimengio/shared-utils";
+import { flex, rowCenter, column, rowParted } from "@jimengio/flex-styles";
 
 import FaIcon from "@jimengio/fa-icons";
 import { EFaIcon } from "@jimengio/fa-icons";

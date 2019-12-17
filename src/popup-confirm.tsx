@@ -3,7 +3,7 @@ import { css, cx } from "emotion";
 
 import PopupArea from "./popup-area";
 import JimoIcon, { EJimoIcon } from "@jimengio/jimo-icons";
-import { center, rowMiddle } from "@jimengio/shared-utils";
+import { center, rowMiddle } from "@jimengio/flex-styles";
 import Space from "./space";
 import { FormButtons } from "./form-layout";
 
