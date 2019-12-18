@@ -71,6 +71,7 @@
     "@jimengio/flex-styles": "^0.1.6",
     "@use-it/interval": "^0.1.3",
     "dayjs": "^1.8.17",
+    "react-qr-reader": "^2.2.1",
     "use-immer": "^0.3.5"
   },
   "peerDependencies": {

@@ -27,5 +27,6 @@ export const routerRules: IRouteRule[] = [
   { path: "pagination" },
   { path: "relative-time" },
   { path: "shorten-code" },
+  { path: "qrcode-popup" },
   { path: "", name: "home" },
 ];
