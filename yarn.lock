@@ -107,10 +107,10 @@
   resolved "https://registry.npmjs.org/@jimengio/ci-progress-webpack-plugin/-/ci-progress-webpack-plugin-0.1.1.tgz#3029a2be1df8f0432fc85a8afa926adc004c4f0a"
   integrity sha512-uVf9yrZHFzT6FC+ZKeuv2GjqKoBaB+ceKZDIqqGH9cL/8iWmvXKKB6LXkCOVVEr9nsJaHOEKQfNGUSELgUzXPw==
 
-"@jimengio/doc-frame@^0.1.9-a1":
-  version "0.1.9-a1"
-  resolved "https://registry.npmjs.org/@jimengio/doc-frame/-/doc-frame-0.1.9-a1.tgz#3278e03407713670bcb3417a655f6541fbbc8c63"
-  integrity sha512-UK5YTrefO8Lbib4oUhklFpCDCKjJ6M6u3DfCCC0OUiZNixYFri24IdlqLpvIbXR+wnDDS0oDe1dX3P18xHKX9w==
+"@jimengio/doc-frame@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.npmjs.org/@jimengio/doc-frame/-/doc-frame-0.1.9.tgz#645014b1f312b26a119c44bb624c0cf57a2a7dd0"
+  integrity sha512-xNOhiYt/b9JH8wlSd9YuOtHwpZG5zlZXs6oPE5c1mgP0Lf53BycrZFH1hKlRazud5IjElT7Uxeygorxvt8b/9A==
   dependencies:
     "@types/highlight.js" "^9.12.3"
     highlight.js "^9.17.1"
@@ -128,21 +128,22 @@
   resolved "https://registry.npmjs.org/@jimengio/flex-styles/-/flex-styles-0.1.6.tgz#d37e37aa4a85c72feff386c27b920a5f8c5f6335"
   integrity sha512-K5Ij+DrkQFgMc4MMWJOCsI8S26xUy6a1fe0JWEtQjwhrEGXwGv/w4coD19+uMcqtLO1HHasfN2NuoJNSh9g5ag==
 
-"@jimengio/jimo-icons@^0.3.2-a1":
-  version "0.3.2-a1"
-  resolved "https://registry.npmjs.org/@jimengio/jimo-icons/-/jimo-icons-0.3.2-a1.tgz#83ba5e2692b3ddf8f873f292ea0eae926e14af6e"
-  integrity sha512-nJjz4AsaBgvv0Dbasafv9PP3IbXB3ZopxIpUoX2A7JN6xSSRkVk+Ef0RP/8dcNdvHXBmSI4tBPcgDEhWJ7eT4A==
+"@jimengio/jimo-icons@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@jimengio/jimo-icons/-/jimo-icons-0.3.2.tgz#ac6d5fec0f99a401e95cbb67af3fa18df9dd2d57"
+  integrity sha512-ixAhYdJKWZdG6Va+aP3DB6fbJHKeK6xg27B++zsR+KU3KfcqqMceoQkgcir2Yo9OBEojIj+nuO5KE2COrTfJbg==
 
 "@jimengio/router-code-generator@^0.2.5":
   version "0.2.5"
   resolved "https://registry.npmjs.org/@jimengio/router-code-generator/-/router-code-generator-0.2.5.tgz#0fa670d53f050c693f1e8925a98cf053dc453f60"
   integrity sha512-sRBtr0yEZuRgItVg9rJtkfySiXjTqJQ0JR7eCWl9rfD/M1tqeI1PF//F9Q5T1hOgRoyna0yAfo9cHoNycAJNjw==
 
-"@jimengio/ruled-router@^0.2.21":
-  version "0.2.21"
-  resolved "https://registry.npmjs.org/@jimengio/ruled-router/-/ruled-router-0.2.21.tgz#d5a057daec5481c291702d8fc0d483d86cfdd22a"
-  integrity sha512-8YXY+0umaNdN5MkcXxzyAMJfqLMA3FIXYt1bZiZ4D4p9Df6BOSO8PBYbbYivwCwZYO+I8lPOXnV5c2WA6z1QpA==
+"@jimengio/ruled-router@^0.2.22":
+  version "0.2.22"
+  resolved "https://registry.npmjs.org/@jimengio/ruled-router/-/ruled-router-0.2.22.tgz#0f6ccf07525e75572b114daeb8fe2dc44acc503d"
+  integrity sha512-9DCLOoETgf4KyYD5YKt7jMR7rUrve7pwh4Ne63RXefBqCpsuxnU7zCvBfTUgqj1oOSJurfi+lXqN/30pjspTeA==
   dependencies:
+    lodash-es "^4.17.15"
     query-string "^6.9.0"
 
 "@jimengio/shared-utils@^0.1.5":
@@ -191,10 +192,10 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@*", "@types/node@^12.12.18":
-  version "12.12.18"
-  resolved "https://registry.npmjs.org/@types/node/-/node-12.12.18.tgz#8d16634797d63c2af5bc647ce879f8de20b56469"
-  integrity sha512-DBkZuIMFuAfjJHiunyRc+aNvmXYNwV1IPMgGKGlwCp6zh6MKrVtmvjSWK/axWcD25KJffkXgkfvFra8ndenXAw==
+"@types/node@*", "@types/node@^12.12.20":
+  version "12.12.20"
+  resolved "https://registry.npmjs.org/@types/node/-/node-12.12.20.tgz#7b693038ce661fe57a7ffa4679440b5e7c5e8b99"
+  integrity sha512-VAe+DiwpnC/g448uN+/3gRl4th0BTdrR9gSLIOHA+SUQskaYZQDOHG7xmjiE7JUhjbXnbXytf6Ih+/pA6CtMFQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -1327,10 +1328,10 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-css-loader@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.npmjs.org/css-loader/-/css-loader-3.3.2.tgz#41b2086528aa4fbf8c0692e874bc14f081129b21"
-  integrity sha512-4XSiURS+YEK2fQhmSaM1onnUm0VKWNf6WWBYjkp9YbSDGCBTVZ5XOM6Gkxo8tLgQlzkZOBJvk9trHlDk4gjEYg==
+css-loader@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.npmjs.org/css-loader/-/css-loader-3.4.0.tgz#9fb263436783117a41d014e45e8eaeba54dd6670"
+  integrity sha512-JornYo4RAXl1Mzt0lOSVPmArzAMV3rGY2VuwtaDc732WTWjdwTaeS19nCGWMcSCf305Q396lhhDAJEWWM0SgPQ==
   dependencies:
     camelcase "^5.3.1"
     cssesc "^3.0.0"
@@ -3036,6 +3037,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+
 lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.4:
   version "4.17.15"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
@@ -4229,9 +4235,9 @@ resolve-url@^0.2.1:
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
 resolve@^1.12.0:
-  version "1.13.1"
-  resolved "https://registry.npmjs.org/resolve/-/resolve-1.13.1.tgz#be0aa4c06acd53083505abb35f4d66932ab35d16"
-  integrity sha512-CxqObCX8K8YtAhOBRg+lrcdn+LK+WYOS8tSjqSFbjtrI5PnS63QPhZl4+yKfrU9tdsbMu9Anr/amegT87M9Z6w==
+  version "1.14.0"
+  resolved "https://registry.npmjs.org/resolve/-/resolve-1.14.0.tgz#6d14c6f9db9f8002071332b600039abf82053f64"
+  integrity sha512-uviWSi5N67j3t3UKFxej1loCH0VZn5XuqdNxoLShPcYPw6cUZn74K1VRj+9myynRX03bxIBEkwlkob/ujLsJVw==
   dependencies:
     path-parse "^1.0.6"
 
@@ -4726,10 +4732,10 @@ strip-eof@^1.0.0:
   resolved "https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
   integrity sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
 
-style-loader@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/style-loader/-/style-loader-1.0.1.tgz#aec6d4c61d0ed8d0a442faed741d4dfc6573888a"
-  integrity sha512-CnpEkSR1C+REjudiTWCv4+ssP7SCiuaQZJTZDWBRwTJoS90mdqkB8uOGMHKgVeUzpaU7IfLWoyQbvvs5Joj3Xw==
+style-loader@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/style-loader/-/style-loader-1.0.2.tgz#433d72eab8d1dd7d64c648b8ad7d9cbff3184111"
+  integrity sha512-xehHGWeCPrr+R/bU82To0j7L7ENzH30RHYmMhmAumbuIpQ/bHmv3SAj1aTRfBSszkXoqNtpKnJyWXEDydS+KeA==
   dependencies:
     loader-utils "^1.2.3"
     schema-utils "^2.0.1"
