@@ -80,12 +80,17 @@ let QrCodePopup: FC<{
 export default QrCodePopup;
 
 const styleEditingArea = css`
-  margin: 48px auto;
+  margin: auto;
   display: inline-flex;
-  background-color: white;
-  border: 4px solid #a88;
-  width: 320px;
-  height: 320px;
+  background-color: black;
+  border: 8px solid #aaa;
+  min-width: 320px;
+  min-height: 320px;
+  max-width: 600px;
+  max-height: 600px;
+  width: min(60vw, 60vh);
+  height: min(60vw, 60vh);
+  margin-top: 12vh;
 
   position: relative;
 `;
@@ -115,11 +120,11 @@ export const shellStylePopupBackground = css`
   min-height: 100px;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 200;
-  background-color: hsla(0, 0%, 0%, 0.4);
-  padding: 16px;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  padding-bottom: 5%;
 
   display: flex;
   justify-content: center;
