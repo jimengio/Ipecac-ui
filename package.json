@@ -1,6 +1,6 @@
 {
   "name": "@jimengio/ipeca-ui",
-  "version": "0.1.4-a1",
+  "version": "0.1.4-a2",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -19,8 +19,8 @@
     "postinstall": "rm -rfv node_modules/@types/*/node_modules/@types/react"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "jimengio",
+  "license": "MIT",
   "devDependencies": {
     "@jimengio/ci-progress-webpack-plugin": "^0.1.0",
     "@jimengio/doc-frame": "^0.1.9",
