@@ -70,7 +70,7 @@ let QrCodePopup: FC<{
         setEditing(true);
       }}
     >
-      {props.children || <a href="javascript: void 0">Click to scan QR code!</a>}
+      {props.children || <a className={styleLink}>Click to scan QR code!</a>}
 
       {isEditing ? renderEditor() : null}
     </span>
@@ -124,4 +124,9 @@ export const shellStylePopupBackground = css`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+`;
+
+let styleLink = css`
+  color: hsl(200, 80%, 50%);
+  cursor: pointer;
 `;
