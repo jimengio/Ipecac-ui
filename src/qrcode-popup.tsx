@@ -1,13 +1,18 @@
 import React, { useState, FC } from "react";
 import { css, cx } from "emotion";
-import { immerHelpers, ImmerStateFunc, MergeStateFunc } from "@jimengio/shared-utils";
-import FaIcon, { EFaIcon } from "@jimengio/fa-icons";
 import { row } from "@jimengio/shared-utils";
 
 import QrReader from "react-qr-reader";
 
+let hintError = () => {
+  return `Current host ${location.host} is neither HTTPS nor localhost.`;
+};
+
 let QrCodePopup: FC<{
   onDetect: (code: string) => void;
+  delay?: number;
+  onError?: (error) => void;
+  cardClassName?: string;
 }> = React.memo((props) => {
   let [isEditing, setEditing] = useState(false);
   let [scanError, setError] = useState(null);
@@ -26,17 +31,19 @@ let QrCodePopup: FC<{
         }}
       >
         <div
-          className={cx(row, styleEditingArea)}
+          className={cx(row, styleEditingArea, props.cardClassName)}
           onClick={(event) => {
             event.stopPropagation();
           }}
         >
-          {scanError != null ? <span className={styleError}>{scanError}</span> : null}
           <QrReader
-            delay={500}
+            delay={props.delay || 500}
             onError={(error) => {
               console.error("QrReader error:", error);
               setError(error.toString());
+              if (props.onError != null) {
+                props.onError(error);
+              }
             }}
             onScan={(code: string) => {
               if (code != null) {
@@ -46,6 +53,12 @@ let QrCodePopup: FC<{
             }}
             style={{ width: "100%" }}
           />
+          {scanError != null ? (
+            <div className={styleError}>
+              <div>{scanError}</div>
+              <div>{hintError()}</div>
+            </div>
+          ) : null}
         </div>
       </div>
     );
@@ -57,7 +70,7 @@ let QrCodePopup: FC<{
         setEditing(true);
       }}
     >
-      <FaIcon name={EFaIcon.Qrcode} />
+      {props.children || <a href="javascript: void 0">Click to scan QR code!</a>}
 
       {isEditing ? renderEditor() : null}
     </span>
@@ -78,9 +91,14 @@ const styleEditingArea = css`
 `;
 
 const styleError = css`
+  bottom: 0;
+  left: 0%;
+  position: absolute;
   padding: 16px;
   color: red;
   font-size: 16px;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  z-index: 20;
 `;
 
 const styleClose = css`
