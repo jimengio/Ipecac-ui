@@ -24,3 +24,5 @@ export { default as RelativeTime } from "./relative-time";
 export { default as ShortenCode } from "./shorten-code";
 export { default as Tabs, ITab } from "./tabs";
 export { default as Tag } from "./tag";
+
+export { default as QrCodePopup } from "./qrcode-popup";

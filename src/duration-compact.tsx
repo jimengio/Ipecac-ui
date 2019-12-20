@@ -1,5 +1,5 @@
 import React, { SFC } from "react";
-import padStart from "lodash/padStart";
+import { padStart } from "lodash-es";
 import { formatString, lingual } from "./lingual";
 import { css } from "emotion";
 

@@ -29,6 +29,7 @@ import DemoRelativeTime from "demo/relative-time";
 import DemoRoughTable from "demo/rough-table";
 import DemoShortenCode from "demo/shorten-code";
 import DemoTag from "demo/tag";
+import DemoQRCodePopup from "demo/qrcode-popup";
 
 let items: ISidebarEntry[] = [
   {
@@ -60,6 +61,7 @@ let items: ISidebarEntry[] = [
   { title: "Rough table", path: genRouter.roughTable.name },
   { title: "Shorten code", path: genRouter.shortenCode.name },
   { title: "Tag", path: genRouter.tag.name },
+  { title: "QRCode ", path: genRouter.qrcodePopup.name },
 ];
 
 let Container: FC<{
@@ -128,6 +130,8 @@ let Container: FC<{
           return <DemoShortenCode />;
         case genRouter.tag.name:
           return <DemoTag />;
+        case genRouter.qrcodePopup.name:
+          return <DemoQRCodePopup />;
 
         default:
           return `Page ${props.router.name}`;
