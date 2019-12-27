@@ -86,8 +86,11 @@ const styleEditingArea = css`
   border: 8px solid #aaa;
   min-width: 320px;
   min-height: 320px;
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 640px;
+  max-height: 640px;
+  /* in case min() does not work */
+  width: 640px;
+  height: 640px;
   width: min(60vw, 60vh);
   height: min(60vw, 60vh);
   margin-top: 12vh;
