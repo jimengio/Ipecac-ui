@@ -157,12 +157,6 @@ export let genRouter = {
     path: () => `/shorten-code`,
     go: () => switchPath(`/shorten-code`),
   },
-  qrcodePopup: {
-    name: "qrcode-popup",
-    raw: "qrcode-popup",
-    path: () => `/qrcode-popup`,
-    go: () => switchPath(`/qrcode-popup`),
-  },
   $: {
     name: "home",
     raw: "",
