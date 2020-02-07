@@ -15,7 +15,6 @@
     "upload": "rsync -avr --progress dist/ fe.jimu.io:~/repo/jimengio/ipeca-ui",
     "gen-router": "webpack --config webpack/router-config.js && node dist/gen-router.js",
     "lang-editor": "cd src/lingual/ && locales-editor",
-    "prepare": "yarn compile",
     "postinstall": "rm -rfv node_modules/@types/*/node_modules/@types/react"
   },
   "keywords": [],
