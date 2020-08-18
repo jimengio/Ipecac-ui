@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { css, cx } from "emotion";
-import { row, flex, center, rowCenter, rowParted, column, rowMiddle } from "@jimengio/flex-styles";
+import { row, expand, center, rowCenter, rowParted, column, rowMiddle } from "@jimengio/flex-styles";
 import Space from "./space";
 import { FuncVoid } from "./types";
 import Button from "./button";
@@ -31,7 +31,7 @@ let FormLayout: FC<{ title?: string; items: IFormLayoutItem[]; itemClassName?: s
               <span>:</span>
             </div>
             <Space width={8} />
-            <div className={flex}>
+            <div className={expand}>
               <div>{item.content || item.render()}</div>
               {item.error != null ? (
                 <>
@@ -64,7 +64,7 @@ export let FormLayoutVertical: FC<{ title?: string; items: IFormLayoutItem[]; it
               <span>:</span>
             </div>
             <Space width={8} />
-            <div className={flex}>{item.content || item.render()}</div>
+            <div className={expand}>{item.content || item.render()}</div>
             {item.error != null ? (
               <>
                 <Space height={8} />
