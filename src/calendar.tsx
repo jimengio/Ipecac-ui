@@ -4,7 +4,7 @@ import { css, cx } from "emotion";
 import { DateTime } from "luxon";
 
 import { Theme } from "./types";
-import { flex, rowCenter, column, rowParted } from "@jimengio/flex-styles";
+import { expand, rowCenter, column, rowParted } from "@jimengio/flex-styles";
 
 import FaIcon from "@jimengio/fa-icons";
 import { EFaIcon } from "@jimengio/fa-icons";
@@ -47,7 +47,7 @@ export default class Calendar extends React.Component<IProps, any> {
           <FaIcon name={EFaIcon.AngleRight} onClick={this.onNextMonth.bind(this)} />
           <FaIcon name={EFaIcon.AngleDoubleRight} onClick={this.onNextYear.bind(this)} />
         </div>
-        <div className={cx(flex, styleGrids)}>
+        <div className={cx(expand, styleGrids)}>
           <span className={cx(styleCell, styleGuide)}>{lingual.monday}</span>
           <span className={cx(styleCell, styleGuide)}>{lingual.tuesday}</span>
           <span className={cx(styleCell, styleGuide)}>{lingual.wednesday}</span>
@@ -58,10 +58,7 @@ export default class Calendar extends React.Component<IProps, any> {
           {days.map((day) => {
             let isSelected = day.hasSame(date, "day");
             // use start-of-day to make sure day-diff is correct
-            let diffDay = day
-              .startOf("day")
-              .diff(date.startOf("day"), "days")
-              .as("days");
+            let diffDay = day.startOf("day").diff(date.startOf("day"), "days").as("days");
             let isThisMonth = day.hasSame(date, "month");
 
             return (

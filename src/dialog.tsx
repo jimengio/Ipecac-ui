@@ -27,7 +27,7 @@ export default class Dialog extends React.Component<IProps, any> {
             <span className={styleTitle}>{this.props.title}</span>
             <FaIcon name={EFaIcon.Close} onClick={this.handleClose} className={styleIcon} />
           </div>
-          <div className={cx(layout.rowCenter, layout.flex, styleBody)}>
+          <div className={cx(layout.rowCenter, layout.expand, styleBody)}>
             <FaIcon name={EFaIcon.Warning} className={styleWarn} />
             <Space width={20} />
             <div className={styleMessage}>{this.props.content}</div>

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { css, cx } from "emotion";
 import FormLayout, { ButtonsAtBottom, IFormLayoutItem, FormLayoutInput, FormLayoutVertical } from "../../src/form-layout";
-import { fullscreen, column, flex } from "@jimengio/flex-styles";
+import { fullscreen, column } from "@jimengio/flex-styles";
 import Space from "../../src/space";
 import { DocDemo } from "@jimengio/doc-frame";
 
