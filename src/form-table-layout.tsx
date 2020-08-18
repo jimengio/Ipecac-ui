@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { css, cx } from "emotion";
-import { row, flex, expand, rowMiddle } from "@jimengio/flex-styles";
+import { row, expand, rowMiddle } from "@jimengio/flex-styles";
 
 type ComponentTableLayout<T = any> = FC<{
   titles: string[];
